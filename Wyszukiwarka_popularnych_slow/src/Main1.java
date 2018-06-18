@@ -20,6 +20,7 @@ public class Main1 {
 
         Connection connect = Jsoup.connect("http://www.onet.pl/");
         Connection connect2 = Jsoup.connect("http://www.interia.pl/");
+        Connection connect3 = Jsoup.connect("http://www.wp.pl/");
 
 
         try {
@@ -49,7 +50,7 @@ public class Main1 {
             FileWriter file3 = new FileWriter("filtered_popular_words.txt", false);
 
             String line = "";
-            String[] lines = {};
+
 
             Scanner scan = new Scanner(file1);
 
@@ -60,7 +61,7 @@ public class Main1 {
                         while (strToken.hasMoreTokens()) {
                             tokens = strToken.nextToken();
                             if(tokens.length() < 4) {
-                                tokens = ""x;
+                                tokens = "";
                             } else {
                             for (int i = 0; i < ignoreElements.length; i++) {
                                 if (tokens.equalsIgnoreCase(ignoreElements[i])) {
@@ -71,7 +72,6 @@ public class Main1 {
                             end += tokens + " ";
                         }
 
-//                        lines[j] = end;
                         file3.append(end + "\n");
                     }
             file3.close();
