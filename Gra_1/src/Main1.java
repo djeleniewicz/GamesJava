@@ -8,6 +8,7 @@ public class Main1 {
 
         int number1 = 0;
         for(int i = 0; ; i++) {
+
             try {
                 System.out.println("Zgadnij liczbę");
                 Scanner scan = new Scanner(System.in);

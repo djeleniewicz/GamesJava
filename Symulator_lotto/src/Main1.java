@@ -8,9 +8,6 @@ public class Main1 {
         int n = 6;
         int guessed = 0;
 
-//        String numbers = new int[];
-//        String wylosowane = "";
-
 
             try {
                 Integer[] arrNum = new Integer[n];
@@ -47,9 +44,9 @@ public class Main1 {
                     for (int i = 0; i < arr.length; i++) {
                         arr[i] = i + 1;
                     }
-//                    System.out.println(Arrays.toString(arr));
+
                     Collections.shuffle(Arrays.asList(arr));
-//                    System.out.println(Arrays.toString(arr));
+
                     Arrays.toString(arr);
                     Integer[] arrNew = Arrays.copyOf(arr,6);
                     Arrays.sort(arrNew);

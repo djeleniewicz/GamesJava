@@ -11,7 +11,9 @@ public class Main1 {
         int max = 1000;
         int attemps = 10;
         int guess = 0;
+
         String answer = "";
+
         System.out.println("Wpisz za dużo - gdy liczba jest za duża");
         System.out.println("Wpisz za mało - gdy liczba jest za mała");
         System.out.println("Wpisz za zgadłeś - gdy zgadłem liczbę");

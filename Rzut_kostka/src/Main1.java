@@ -5,6 +5,7 @@ public class Main1 {
 
     static public void main(String[] args) {
 
+
     throwDice("6D6");
 
 
