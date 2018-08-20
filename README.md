@@ -1,4 +1,4 @@
-# Warsztaty_1
+# Workshop 1
 
 Games:
 1) Guessing numbers
