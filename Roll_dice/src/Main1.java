@@ -1,12 +1,11 @@
 import java.util.Random;
-import org.apache.commons.lang3.StringUtils;
 
 public class Main1 {
 
     static public void main(String[] args) {
 
 
-    throwDice("6D6");
+        throwDice("6D6");
 
 
     }
@@ -22,14 +21,13 @@ public class Main1 {
 
         String[] numbersThrow = throwDice.split("D");
 
-        if(throwDice.indexOf("D") == 0) {
+        if (throwDice.indexOf("D") == 0) {
             numberOfThrow = 1;
-        }
-        else {
+        } else {
             numberOfThrow = Integer.parseInt(numbersThrow[0]);
         }
 
-        if(throwDice.contains("+")) {
+        if (throwDice.contains("+")) {
             String[] correction = throwDice.split("\\+");
             numberCorrection = Integer.parseInt(correction[1]);
             System.out.println("Korekcja wynosi z dodawaniem: " + numberCorrection);

@@ -7,27 +7,24 @@ public class Main1 {
     static public void main(String[] args) {
 
         int number1 = 0;
-        for(int i = 0; ; i++) {
+        for (int i = 0; ; i++) {
 
             try {
                 System.out.println("Zgadnij liczbę");
                 Scanner scan = new Scanner(System.in);
                 number1 = scan.nextInt();
                 Random rand = new Random();
-                int random = rand.nextInt(100)+1;
+                int random = rand.nextInt(100) + 1;
                 System.out.println(random);
 
-                if(number1 < random) {
+                if (number1 < random) {
                     System.out.println("Za mało!");
-                }
-                else if(number1 > random) {
+                } else if (number1 > random) {
                     System.out.println("Za dużo!");
-                }
-                else {
+                } else {
                     System.out.println("Zgadłeś!");
                     break;
                 }
-
 
 
             } catch (InputMismatchException e) {

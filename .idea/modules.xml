@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Game_1/Gra_w_zgadywanie_liczb.iml" filepath="$PROJECT_DIR$/Game_1/Gra_w_zgadywanie_liczb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gra_3/Gra_zgadywanie_liczb_komputer.iml" filepath="$PROJECT_DIR$/Gra_3/Gra_zgadywanie_liczb_komputer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rzut_kostka/Rzut_kostka.iml" filepath="$PROJECT_DIR$/Rzut_kostka/Rzut_kostka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Symulator_lotto/Symulator_lotto.iml" filepath="$PROJECT_DIR$/Symulator_lotto/Symulator_lotto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Warsztaty_1.iml" filepath="$PROJECT_DIR$/.idea/Warsztaty_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wyszukiwarka_popularnych_slow/Wyszukiwarka_popularnych_slow.iml" filepath="$PROJECT_DIR$/Wyszukiwarka_popularnych_slow/Wyszukiwarka_popularnych_slow.iml" />
+    </modules>
+  </component>
+</project>

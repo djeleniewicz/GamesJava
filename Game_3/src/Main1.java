@@ -21,26 +21,25 @@ public class Main1 {
         Scanner scan2 = new Scanner(System.in);
         if (scan2.nextLine().equalsIgnoreCase("ok")) {
 
-            for (int i = 0; i <= attemps+2; i++) {
+            for (int i = 0; i <= attemps + 2; i++) {
 
-                if(i == 10) {
+                if (i == 10) {
                     System.out.println("Nie oszukuj");
                     System.out.println("Zgaduje: " + guess);
                     break;
-                }else {
-                guess = ((max - min) / 2) + min;
-                System.out.println("Zgaduje: " + guess);
-                Scanner scan = new Scanner(System.in);
-                answer = scan.nextLine();
-                if (answer.equalsIgnoreCase("zgadłeś")) {
-                    System.out.println("Wygrałem!!!!!!");
-                    break;
-                }else if (answer.equalsIgnoreCase("za dużo")) {
-                    max = guess;
-                } else if (answer.equalsIgnoreCase("za mało")) {
-                    min = guess;
-                }
-                else{
+                } else {
+                    guess = ((max - min) / 2) + min;
+                    System.out.println("Zgaduje: " + guess);
+                    Scanner scan = new Scanner(System.in);
+                    answer = scan.nextLine();
+                    if (answer.equalsIgnoreCase("zgadłeś")) {
+                        System.out.println("Wygrałem!!!!!!");
+                        break;
+                    } else if (answer.equalsIgnoreCase("za dużo")) {
+                        max = guess;
+                    } else if (answer.equalsIgnoreCase("za mało")) {
+                        min = guess;
+                    } else {
                         i--;
                     }
                 }

@@ -54,26 +54,26 @@ public class Main1 {
 
             Scanner scan = new Scanner(file1);
 
-                while (scan.hasNextLine()) {
-                    String end = "";
-                    line = scan.nextLine();
-                    StringTokenizer strToken = new StringTokenizer(line, ",. ");
-                        while (strToken.hasMoreTokens()) {
-                            tokens = strToken.nextToken();
-                            if(tokens.length() < 4) {
+            while (scan.hasNextLine()) {
+                String end = "";
+                line = scan.nextLine();
+                StringTokenizer strToken = new StringTokenizer(line, ",. ");
+                while (strToken.hasMoreTokens()) {
+                    tokens = strToken.nextToken();
+                    if (tokens.length() < 4) {
+                        tokens = "";
+                    } else {
+                        for (int i = 0; i < ignoreElements.length; i++) {
+                            if (tokens.equalsIgnoreCase(ignoreElements[i])) {
                                 tokens = "";
-                            } else {
-                            for (int i = 0; i < ignoreElements.length; i++) {
-                                if (tokens.equalsIgnoreCase(ignoreElements[i])) {
-                                    tokens = "";
-                                }
                             }
-                            }
-                            end += tokens + " ";
                         }
-
-                        file3.append(end + "\n");
                     }
+                    end += tokens + " ";
+                }
+
+                file3.append(end + "\n");
+            }
             file3.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
